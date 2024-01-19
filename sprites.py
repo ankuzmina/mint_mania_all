@@ -1,5 +1,6 @@
-#sprites.py
+# sprites.py
 import pygame
+
 
 class Cat(pygame.sprite.Sprite):
     def __init__(self, screen_width, screen_height):
@@ -71,6 +72,7 @@ class Heart(pygame.sprite.Sprite):
     def update(self):
         self.rect.y += self.speed
 
+
 class Thorn(pygame.sprite.Sprite):
     def __init__(self, x, y):
         super().__init__()
@@ -81,6 +83,7 @@ class Thorn(pygame.sprite.Sprite):
 
     def update(self):
         self.rect.y += self.speed
+
 
 class Mint(pygame.sprite.Sprite):
     def __init__(self, x, y):

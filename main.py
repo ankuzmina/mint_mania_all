@@ -1,6 +1,7 @@
-#main.py
+# main.py
 import pygame
 from game import Game
+
 
 def main():
     pygame.init()
@@ -29,6 +30,7 @@ def main():
 
     game.show_game_over_screen()
     pygame.quit()
+
 
 if __name__ == "__main__":
     main()

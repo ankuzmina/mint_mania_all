@@ -1,5 +1,6 @@
-#utils.py
+# utils.py
 import pygame
+
 
 def load_image(file_path, target_size=None):
     try:

@@ -1,4 +1,4 @@
-#game.py
+# game.py
 import pygame
 import sys
 from sprites import Cat, Food, Heart, Thorn, Mint
@@ -64,7 +64,7 @@ class Game:
             self.show_victory_screen()  # Показываем экран победы
 
         # Увеличение сложности уровня
-        #if self.cat.mint_collected >= 50 * (self.level.mint_banks + 1):
+        # if self.cat.mint_collected >= 50 * (self.level.mint_banks + 1):
         #    self.level.increase_difficulty()
 
         # Обновление текстовых поверхностей для отображения актуальной информации
@@ -85,10 +85,8 @@ class Game:
         self.screen.blit(self.speed_text, (10, 90))
         self.screen.blit(self.level_text, (10, 130))
 
-
         pygame.display.flip()
         self.clock.tick(30)  # Устанавливаем частоту кадров
-
 
     def show_start_screen(self):
         # Отображение стартового экрана
@@ -134,7 +132,7 @@ class Game:
 
     def load_data(self):
         # Загрузка изображений
-        self.cat.image = load_image("assets/cat.png", target_size=(100, 100))  # Пример размера
+        self.cat.image = load_image("assets/cat.png", target_size=(50, 50))  # Пример размера
         print("Cat image loaded successfully!")
         self.level.food_image = load_image("assets/food.png", target_size=(50, 50))  # Пример размера
         print("Cat image loaded successfully!")
