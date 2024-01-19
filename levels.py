@@ -3,6 +3,7 @@ import pygame
 from sprites import Food, Heart, Thorn, Mint
 import random
 
+
 class Level:
     def __init__(self, screen_width, screen_height):
         self.screen_width = screen_width
@@ -46,6 +47,7 @@ class Level:
         if cat.lives <= 0:
             return True
         return False
+
 
 # Класс Level1, который будет наследоваться от базового класса Level
 class Level1(Level):
@@ -131,7 +133,7 @@ class Level1(Level):
                 elif isinstance(item, Food):
                     self.cat.increase_speed()  # Увеличиваем скорость при съедании еды
 
-            #self.handle_collisions()
+            # self.handle_collisions()
 
             # Проверяем, набрано ли достаточно мяты для перехода на следующий уровень
             if self.cat.mint_collected >= 20:
